@@ -286,6 +286,7 @@ body {
   padding-top: 30px;
   font-weight: bold;
   letter-spacing: 3px;
+  width: 70%;
 }
 
 .introduction__content > p {
@@ -299,6 +300,11 @@ body {
   border-radius: 68px;
   margin-bottom: 140px;
   background-color: #a60000;
+  cursor: pointer;
+}
+
+.introduction__signup-btn:hover, .introduction__signup-btn:active {
+  background-color: #b60000;
 }
 
 .introduction__signup-btn-text {
@@ -409,6 +415,11 @@ body {
   background-color: #cccccc;
   color: #444444;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.speaker__view-more:hover, .speaker__view-more:active {
+  background-color: #aaaaaa;
 }
 
 /* Column  */
@@ -563,7 +574,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 70%;
-  height: 360px;
   margin: auto;
 }
 
@@ -571,8 +581,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px 20px;
 }
 
 .member__photo {
@@ -703,6 +712,62 @@ body {
 
 /* Small screen */
 @media screen and (max-width: 540px) {
+  .navbar {
+    height: 75px;
+  }
+  .navbar__menu {
+    margin-right: 35px;
+  }
+
+  .menu-wrapper {
+    top: 70px;
+    padding-top: 50px;
+    height: 350px;
+  }
+
+  .menu__title {
+    padding-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  /* Hamburger Menu  */
+  /* $bar-height: 1px  */
+  /* $bar-width: 40px  */
+  /* $bar-spacing: 8px  */
+  .hamburger-menu {
+    width: 25px;
+    /* $bar-height + 2 * $bar-spacing  */
+    height: 17px;
+    cursor: pointer;
+  }
+
+  .bar,
+  .bar:after,
+  .bar:before {
+    /* $bar-width  */
+    width: 25px;
+    /* $bar-height  */
+    height: 1px;
+  }
+
+  .bar {
+    /* translateY($bar-spacing)  */
+    transform: translateY(8px);
+  }
+
+  .bar:before {
+    /* $bar-spacing  */
+    bottom: 8px;
+  }
+
+  .bar:after {
+    /* $bar-spacing  */
+    top: 8px;
+  }
+
+  /* End Hamburger Menu  */
+
   .top__body-h2 {
     margin-top: 75px;
     font-size: 15px;
@@ -710,13 +775,13 @@ body {
   }
   .top__body-h1 {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
 
   .top__body-topic {
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
 
   .top__footer {
@@ -740,5 +805,116 @@ body {
   .top__footer-date {
     font-size: 36px;
     letter-spacing: 2px;
+  }
+
+  .speaker__header {
+    flex-direction: column;
+  }
+
+  .speaker__header-left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .speaker__header-right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .speaker__header-right-body > h3 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  .speaker__header-right-body > span {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .speaker__list-item:nth-child(3n-1) {
+    margin: 0;
+  }
+
+  .speaker__summary-text {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .speaker__list-item {
+    width: 100%;
+    height: 420px;
+  }
+  .speaker__view-more {
+    width: 50%;
+  }
+
+  .column__header {
+    flex-direction: column;
+  }
+
+  .column__header-left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .column__header-right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .column__header-left-body > h3 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .column__header-left-body > span {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .column__list-item:nth-child(3n-1) {
+    margin: 0;
+  }
+
+  .column__summary-text {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .column__list-item {
+    width: 100%;
+    height: 420px;
+  }
+  .column__view-more {
+    width: 50%;
+  }
+
+  .team__header {
+    height: 100px;
+  }
+
+  .team__header-title {
+    padding-top: 15px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .team__header-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .team__photo {
+    height: 300px;
+  }
+
+  .member {
+    width: 100%;
+  }
+
+  .team {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    height: 75px;
   }
 }
