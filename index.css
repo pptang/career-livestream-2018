@@ -384,6 +384,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.speaker__photo:hover {
+  transform: scale(1.1);
 }
 
 .speaker__summary {
@@ -492,6 +498,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.column__photo:hover {
+  transform: scale(1.1);
 }
 
 .column__summary {
@@ -528,6 +540,11 @@ body {
   background-color: #cccccc;
   color: #444444;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.column__view-more:hover, column__view-more:active {
+  background-color: #aaaaaa;
 }
 
 /* Team  */
