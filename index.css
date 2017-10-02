@@ -688,6 +688,13 @@ body {
     font-size: 24px;
     letter-spacing: 6px;
   }
+
+  .speaker__list-item:nth-child(3n-1) {
+    margin: 0;
+  }
+  .speaker__list-item:nth-child(2n) {
+    margin-left: 75px;
+  }
 }
 
 /* Medium screen */
@@ -729,6 +736,10 @@ body {
   .top__footer-date {
     font-size: 48px;
     letter-spacing: 3px;
+  }
+
+  .speaker__list-item:nth-child(2n) {
+    margin-left: 0;
   }
 }
 
