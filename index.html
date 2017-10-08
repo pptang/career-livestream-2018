@@ -296,14 +296,29 @@
       <i class="facebook-icon fa fa-facebook fa-3x" aria-hidden="true"></i>
     </div>
   </div>
-  <div id="modal-member" class="modal__member_box">
-    <div class="modal__member_content">
-      <img src="" class="modal__member_photo" />
-      <div class="modal__member_text">
-        <div class="modal__member_name">Victor</div>
-        <div class="modal__member_description"></div>
-        <i class="modal__member_link facebook-icon fa fa-facebook fa-3x"></i>
-        <div class="modal__member_link">
+  <div id="modal-column" class="modal__column-box">
+    <div class="modal__column-content">
+      <div class="column__summary-text">
+        日本是個適合開始海外職涯的國家嗎？
+      </div>
+      <img src="" class="modal__column-photo" />
+      <div class="column__column-text">
+        日本是個適合開始海外職涯的國家嗎？
+      </div>
+    </div>
+    <div id="modal-column-close" class="modal__close">
+      <img class="modal__close-icon" width="50" height="50" src="ic_clear_black_48dp_2x.png" />
+    </div>
+  </div>
+
+  <div id="modal-member" class="modal__member-box">
+    <div class="modal__member-content">
+      <img src="" class="modal__member-photo" />
+      <div class="modal__member-text">
+        <div class="modal__member-name">Victor</div>
+        <div class="modal__member-description"></div>
+        <i class="modal__member-link facebook-icon fa fa-facebook fa-3x"></i>
+        <div class="modal__member-link">
           <a href="">
             <img width="50" height="50" src="worklifeinjapan.png" />
           </a>
@@ -311,7 +326,7 @@
       </div>
     </div>
     <div id="modal-member-close" class="modal__close">
-      <img class="modal__close_icon" width="50" height="50" src="ic_clear_black_48dp_2x.png" />
+      <img class="modal__close-icon" width="50" height="50" src="ic_clear_black_48dp_2x.png" />
     </div>
   </div>
   <script>
@@ -321,9 +336,9 @@
         var photo = $(this).attr("data-photo");
         var description = $(this).attr("data-description");
 
-        $("#modal-member .modal__member_name").text(name);
-        $("#modal-member .modal__member_photo").attr("src", photo);
-        $("#modal-member .modal__member_description").text(description);
+        $("#modal-member .modal__member-name").text(name);
+        $("#modal-member .modal__member-photo").attr("src", photo);
+        $("#modal-member .modal__member-description").text(description);
 
         $("#modal-member").css("display", "block");
       });
@@ -332,6 +347,23 @@
         $("#modal-member").css("display", "none");
       });
 
+      window.onclick = function(event) {
+        if ($(event.target).attr("id") == "modal-member") {
+          $("#modal-member").css("display", "none");
+        }
+      }
+
+      $(".column__photo").click(function() {
+        // var name = $(this).attr("data-name");
+        // var photo = $(this).attr("data-photo");
+        // var description = $(this).attr("data-description");
+
+        // $("#modal-member .modal__member_name").text(name);
+        // $("#modal-member .modal__member_photo").attr("src", photo);
+        // $("#modal-member .modal__member_description").text(description);
+
+        $("#modal-column").css("display", "block");
+      });
     });
   </script>
 </body>

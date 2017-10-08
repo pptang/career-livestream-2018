@@ -721,7 +721,7 @@ body {
   margin-right: 50px;
 }
 
-.modal__member_box {
+.modal__member-box, .modal__column-box {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -736,15 +736,15 @@ body {
 }
 
 /* Modal Content */
-.modal__member_content {
+.modal__member-content, .modal__column-content {
   background-color: #fefefe;
   margin: auto;
   padding: 40px;
   border: 1px solid #888;
-  width: 70%;
+  width: 560px;
 }
 
-.modal__member_photo {
+.modal__member-photo {
   width: 200px;
   height: 200px;
   margin-right: 32px;
@@ -752,21 +752,21 @@ body {
 	vertical-align: top;
 }
 
-.modal__member_text {
+.modal__member-text {
 	height: 200px;
 	position: relative;
 	width: calc(100% - 256px);
 	display: inline-block;
 }
 
-.modal__member_name {
+.modal__member-name {
 	font-size: 24px;
   letter-spacing: 6px;
   line-height: 1.5;
 	margin-bottom: 20px;
 }
 
-.modal__member_link {
+.modal__member-link {
 	background-color: #3B5998;
 	width: 50px;
 	height:50px;
@@ -777,7 +777,7 @@ body {
 }
 
 .modal__close {
-	width: 70%;
+	width: 560px;
 	padding-left: 40px;
 	padding-right: 40px;
 	margin-top: 20px;
@@ -785,11 +785,22 @@ body {
 	margin: auto;
 }
 
-.modal__close_icon {
+.modal__close-icon {
 	background-color: white;
 	border-radius: 24px;
 	margin-top: 16px;
 	cursor: pointer;
+}
+
+.modal__column-photo {
+	width: inherit;
+	height: 280px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.modal__column-text {
+	width: inherit;
 }
 
 /* Large screen */
