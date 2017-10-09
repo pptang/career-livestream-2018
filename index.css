@@ -721,7 +721,7 @@ body {
   margin-right: 50px;
 }
 
-.modal__member-box, .modal__column-box {
+.modal__member-box, .modal__column-box, .modal__speaker-box {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -739,9 +739,11 @@ body {
 .modal__member-content, .modal__column-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 40px;
+  padding: 50px;
   border: 1px solid #888;
   width: 560px;
+	max-height: 400px;
+	overflow-y: scroll;
 }
 
 .modal__member-photo {
@@ -799,8 +801,27 @@ body {
 	margin-bottom: 24px;
 }
 
+.modal__column-title {
+	width: inherit;
+	font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
 .modal__column-text {
 	width: inherit;
+	font-size: 16px;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
+.modal__speaker-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 800px;
+	max-height: 450px;
+	overflow-y: scroll;
 }
 
 /* Large screen */
