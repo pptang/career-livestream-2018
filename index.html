@@ -300,7 +300,7 @@
     </div>
   </div>
   <div class="footer">
-    <div class="wij-logo">WorkLifeInJapanLogo</div>
+    <div class="wij-logo"></div>
     <div class="facebook facebook-footer">
       <i class="facebook-icon fa fa-facebook fa-3x" aria-hidden="true"></i>
     </div>
@@ -309,7 +309,7 @@
     <div class="modal__speaker-content">
       <iframe id="ytplayer" type="text/html" width="800" height="450"
         src=""
-        frameborder="0">
+        frameborder="0" allowfullscreen>
       </iframe>
     </div>
     <div id="modal-speaker-close" class="modal__close">
@@ -411,16 +411,19 @@
             break;
 
         }
-        // if ($(event.target).attr("id") == "modal-member") {
-        //   $("#modal-member").css("display", "none");
-        // } else if ($(event.target).attr("id") == "modal-column") {
-        //   $("#modal-column").css("display", "none");
-        // } else if () {
-        //
-        // }
       }
 
+      var youtubeResize = function() {
+        var width = $(window).width();
+        if (width < 800) {
+            $("#ytplayer").attr("width", width);
+        }
+      }
+      youtubeResize();
 
+      $(window).resize(function() {
+        youtubeResize();
+      });
     });
   </script>
 </body>
