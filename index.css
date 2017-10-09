@@ -217,7 +217,7 @@ body {
   z-index: 2;
   margin-bottom: 45px;
   color: #ffffff;
-  
+
 }
 
 /* Additional styles while using photo as title */
@@ -719,6 +719,109 @@ body {
 
 .facebook-footer {
   margin-right: 50px;
+}
+
+.modal__member-box, .modal__column-box, .modal__speaker-box {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal__member-content, .modal__column-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 560px;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+.modal__member-photo {
+  width: 200px;
+  height: 200px;
+  margin-right: 32px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.modal__member-text {
+	height: 200px;
+	position: relative;
+	width: calc(100% - 256px);
+	display: inline-block;
+}
+
+.modal__member-name {
+	font-size: 24px;
+  letter-spacing: 6px;
+  line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.modal__member-link {
+	background-color: #3B5998;
+	width: 50px;
+	height:50px;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 0px;
+	color: #000000;
+}
+
+.modal__close {
+	width: 560px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+.modal__close-icon {
+	background-color: white;
+	border-radius: 24px;
+	margin-top: 16px;
+	cursor: pointer;
+}
+
+.modal__column-photo {
+	width: inherit;
+	height: 280px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.modal__column-title {
+	width: inherit;
+	font-size: 32px;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
+.modal__column-text {
+	width: inherit;
+	font-size: 16px;
+  letter-spacing: 6px;
+  line-height: 1.5;
+}
+
+.modal__speaker-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 800px;
+	max-height: 450px;
+	overflow-y: scroll;
 }
 
 /* Large screen */
