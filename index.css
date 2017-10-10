@@ -744,7 +744,6 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 50px;
-  border: 1px solid #888;
   width: 660px;
 	max-height: 400px;
 	overflow-y: scroll;
@@ -773,7 +772,6 @@ body {
 }
 
 .modal__member-link {
-	background-color: #3B5998;
 	width: 50px;
 	height:50px;
 	border-radius: 4px;
@@ -822,7 +820,6 @@ body {
 .modal__speaker-content {
   background-color: #fefefe;
   margin: auto;
-  border: 1px solid #888;
   width: 800px;
 	max-height: 450px;
 	overflow-y: scroll;
@@ -1118,5 +1115,24 @@ body {
 
 	#ytplayer, .modal__speaker-content {
 		width: 100%;
+	}
+
+	.modal__member-text {
+		width: auto;
+		display: block;
+		position: initial;
+		height: auto;
+	}
+
+	.modal__member-photo {
+	  margin-right: 20px;
+		margin-bottom: 20px;
+		float: left;
+		display: block;
+	}
+
+	.modal__member-link {
+		position: initial;
+		clear: both;
 	}
 }
