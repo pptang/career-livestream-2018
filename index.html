@@ -422,11 +422,8 @@
         youtubeResize();
       });
 
-      // Hide menu while clicking li to navigate
-      $('.menu__title').click(function() {
-        $('.navbar__menu').click();
-      });
       $('.menu-wrapper a').click(function() {
+        $('.navbar__menu').click();
         $('body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top
         }, 500);
