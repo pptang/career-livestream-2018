@@ -159,7 +159,7 @@ body {
   height: 475px;
   padding-top: 100px;
   position: absolute;
-  top: 125px;
+  top: 100px;
   left: 0;
   z-index: 2;
   background-color: #a60000;
@@ -922,7 +922,7 @@ body {
   }
 
   .menu-wrapper {
-    top: 70px;
+    top: 50px;
     padding-top: 50px;
     height: 350px;
   }
