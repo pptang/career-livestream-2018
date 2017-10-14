@@ -359,10 +359,12 @@
         $("#modal-member .modal__member-description").text(description);
 
         $("#modal-member").css("display", "block");
+        $('body').addClass('noscroll');
       });
 
       $("#modal-member-close").click(function() {
         $("#modal-member").css("display", "none");
+        $('body').removeClass('noscroll');
       });
 
       $(".column__list-item").click(function() {
@@ -375,10 +377,12 @@
         $("#modal-column .modal__column-text").text(text);
 
         $("#modal-column").css("display", "block");
+        $('body').addClass('noscroll');
       });
 
       $("#modal-column-close").click(function() {
         $("#modal-column").css("display", "none");
+        $('body').removeClass('noscroll');
       });
 
       $(".speaker__list-item").click(function() {
@@ -386,11 +390,13 @@
 
         $("#modal-speaker iframe").attr('src', video);
         $("#modal-speaker").css("display", "block");
+        $('body').addClass('noscroll');
       });
 
       $("#modal-speaker-close").click(function() {
         $("#modal-speaker").css("display", "none");
         $("#modal-speaker iframe").attr('src', "");
+        $('body').removeClass('noscroll');
       });
 
       window.onclick = function(event) {
@@ -398,15 +404,17 @@
         switch (targetId) {
           case "modal-member":
             $("#modal-member").css("display", "none");
+            $('body').removeClass('noscroll');
             break;
           case "modal-column":
             $("#modal-column").css("display", "none");
+            $('body').removeClass('noscroll');
             break;
           case "modal-speaker":
             $("#modal-speaker").css("display", "none");
             $("#modal-speaker iframe").attr('src', "");
+            $('body').removeClass('noscroll');
             break;
-
         }
       }
 
