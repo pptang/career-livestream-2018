@@ -457,9 +457,10 @@ body.noscroll {
   justify-content: center;
   align-items: center;
   color: #4a4a4a;
-  height: 30px;
   width: 85px;
-  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .column-content__summary-text {
@@ -469,6 +470,7 @@ body.noscroll {
   font-weight: bold;
   color: #4a4a4a;
   margin-bottom: 20px;
+  height: 50px;
 }
 
 .column__summary-date {
@@ -493,7 +495,12 @@ body.noscroll {
 .member-item {
   width: calc(100% / 6);
   height: 230px;
+  /* cursor: pointer; */
 }
+
+/* .member-item:nth-child(n+1):hover {
+  background-color: rgba(0,0,0,0.4);
+} */
 
 .member-item__title {
   font-size: 32px;
