@@ -837,6 +837,11 @@ body.noscroll {
   .speaker__list-item:nth-child(2n) {
     margin-left: 75px;
   }
+  .member-item {
+    width: calc(100% / 3);
+    height: 260px;
+    /* cursor: pointer; */
+  }
 }
 
 /* Medium screen */
@@ -891,6 +896,12 @@ body.noscroll {
 
   .wij-logo {
     height: 70px;
+  }
+
+  .member-item {
+    width: calc(100% / 2);
+    height: 300px;
+    /* cursor: pointer; */
   }
 }
 
@@ -1142,5 +1153,11 @@ body.noscroll {
 
   .wij-logo {
     height: 50px;
+  }
+
+  .member-item {
+    width: 100%;
+    height: 350px;
+    /* cursor: pointer; */
   }
 }
